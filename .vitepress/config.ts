@@ -13,18 +13,43 @@ export default defineConfig({
     // },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/examples' },
+      { text: 'Principles', link: '/principles/' },
       { text: 'JavaScript', link: '/javascript/' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        link: '/examples',
+        text: 'Principles',
+        link: '/principles/',
         collapsed: true,
         items: [
-          { text: 'Markdown Examples', link: '/examples/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/examples/api-examples' }
+          {
+            text: 'SOLID Principles',
+            link: '/principles/solid/',
+            collapsed: true,
+            items: [
+              {
+                text: 'Single Responsibility Principle',
+                link: '/principles/solid/single-responsibility',
+              },
+              {
+                text: 'Open-Closed Principle',
+                link: '/principles/solid/open-closed',
+              },
+              {
+                text: 'Liskov Substitution Principle',
+                link: '/principles/solid/liskov-substitution',
+              },
+              {
+                text: 'Interface Segregation Principle',
+                link: '/principles/solid/interface-segregation',
+              },
+              {
+                text: 'Dependency Inversion Principle',
+                link: '/principles/solid/dependency-inversion',
+              },
+            ]
+          },
         ]
       },
       {
@@ -35,40 +60,16 @@ export default defineConfig({
           { text: 'Markdown Examples', link: '/javascript/' },
         ]
       },
-      {
-        text: 'Principles',
-        link: '/principles/',
-        collapsed: true,
-        items: [
-          {
-            text: 'S.O.L.I.D',
-            link: '/principles/solid/',
-            collapsed: true,
-            items: [
-              {
-                text: 'Single Responsibility',
-                link: '/principles/solid/single-responsibility',
-              },
-              {
-                text: 'Open-Closed',
-                link: '/principles/solid/open-closed',
-              },
-              {
-                text: 'Liskov Substitution',
-                link: '/principles/solid/liskov-substitution',
-              },
-              {
-                text: 'Interface Segregation',
-                link: '/principles/solid/interface-segregation',
-              },
-              {
-                text: 'Dependency Inversion',
-                link: '/principles/solid/dependency-inversion',
-              },
-            ]
-          },
-        ]
-      },
+      // {
+      //   text: 'Examples',
+      //   link: '/examples',
+      //   collapsed: true,
+      //   items: [
+      //     { text: 'Markdown Examples', link: '/examples/markdown-examples' },
+      //     { text: 'Runtime API Examples', link: '/examples/api-examples' }
+      //   ]
+      // },
+      
     ],
 
     socialLinks: [

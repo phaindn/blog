@@ -2,48 +2,44 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# S.O.L.I.D principles
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+<img src="/public/assets/solid/solid-hero.png" alt="worry?">
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+In software development we usually use **Object Oriented Design** when it comes to writing flexible, scalable, maintainable and reusable code. When teamworking, it's better to implement some principles to avoid *"re-invent the wheel"* and ensure the consistency of the project, one of the most famous principles are SOLID.
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+---
 
-const { theme, page, frontmatter } = useData()
-</script>
+The SOLID principle helps in reducing **tight coupling**, making your code **loose coupling**.
 
-## Results
+> Tight coupling means a group of classes are highly dependent on one another.
 
-### Theme Data
-<pre>{{ theme }}</pre>
 
-### Page Data
-<pre>{{ page }}</pre>
+## What exactly SOLID is?
+SOLID is an acronym of five principles below:
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
+### <ins>S</ins>ingle Responsibility Principle
+This principle states that *“a class should have only one reason to change”* which means ***a class should have a single responsibility or single job or single purpose***
 
-<script setup>
-import { useData } from 'vitepress'
+### <ins>O</ins>pen-Closed Principle
+This principle states that *“software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification”* which means you should be able to extend a class behavior, without modifying it.
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+### <ins>L</ins>iskov Substitution Principle
+This principle states that *“Derived or child classes must be substitutable for their base or parent classes“*. This principle ensures that any class that is the child of a parent class should be usable in place of its parent without any unexpected behavior.
 
-## Results
+### <ins>I</ins>nterface Segregation Principle
+This principle states that *“do not force any client to implement an interface which is irrelevant to them“*. This is a little bit abstraction but we can understand it like "it's no use for a fish to know how to run like a cat because they have no leg".
 
-### Theme Data
-<pre>{{ theme }}</pre>
+### <ins>D</ins>ependency Inversion Principle
+There are two key points are here to keep in mind about this principle:
 
-### Page Data
-<pre>{{ page }}</pre>
+- High-level modules/classes should not depend on low-level modules/classes. Both should depend upon abstractions.
+- Abstractions should not depend upon details. Details should depend upon abstractions.
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
+::: warning
+**Dependency Inversion** and **Dependency Injection** are two different concept.
+:::
 
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+## Not detailed enought?
+<img src="/public/assets/solid/pepe-worry.jpg" width="200" alt="worry?">
+Don't worry, I have 5 separated articles for those principles which I'll dig more deep about them.
