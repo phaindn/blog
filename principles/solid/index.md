@@ -36,7 +36,7 @@ There are two key points are here to keep in mind about this principle:
 - High-level modules/classes should not depend on low-level modules/classes. Both should depend upon abstractions.
 - Abstractions should not depend upon details. Details should depend upon abstractions.
 
-::: warning
+::: danger
 **Dependency Inversion** and **Dependency Injection** are two different concept.
 :::
 
