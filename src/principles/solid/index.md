@@ -4,7 +4,7 @@ outline: deep
 
 # S.O.L.I.D principles
 
-<img src="/public/assets/solid/solid-hero.png" alt="worry?">
+<img src="/assets/solid/solid-hero.png" alt="worry?">
 
 In software development we usually use **Object Oriented Design** when it comes to writing flexible, scalable, maintainable and reusable code. When teamworking, it's better to implement some principles to avoid *"re-invent the wheel"* and ensure the consistency of the project, one of the most famous principles are SOLID.
 
@@ -41,5 +41,5 @@ There are two key points are here to keep in mind about this principle:
 :::
 
 ## Not detailed enought?
-<img src="/public/assets/solid/pepe-worry.jpg" width="200" alt="worry?">
+<img src="/assets/solid/pepe-worry.jpg" width="200" alt="worry?">
 Don't worry, I have 5 separated articles for those principles which I'll dig more deep about them.

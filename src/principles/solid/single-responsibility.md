@@ -4,7 +4,7 @@ outline: deep
 
 # <ins>S</ins>ingle Responsibility Principle
 
-<img src="/public/assets/solid/single-responsibility-hero.png" alt="worry?">
+<img src="/assets/solid/single-responsibility-hero.png" alt="worry?">
 
 This principle states that *“a class should have only one reason to change”* which means ***a class should have a single responsibility or single job or single purpose***.
 
