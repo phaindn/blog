@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
-  title: "DevNote",
+  title: "Felixx's Note",
   description: "A page where I write down",
   srcDir: 'src',
   base: '/blog',
