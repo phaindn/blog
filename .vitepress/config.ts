@@ -6,6 +6,7 @@ export default defineConfig({
   title: "DevNote",
   description: "A page where I write down",
   srcDir: 'src',
+  base: '/blog',
 
   // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
